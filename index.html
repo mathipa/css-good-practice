@@ -1,0 +1,98 @@
+`<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Good CSS Practice</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+		 <section>
+  			<section data-markdown="slides/index.md"></section>
+  			<section data-markdown="slides/moreabout.md"></section> 
+  		</section>
+
+ 		<section>
+  			<section data-markdown="slides/welcome.md"></section>
+  			<section data-markdown="slides/covering.md"></section> 
+  		</section>
+
+  		<section>                    
+		    <section data-markdown="slides/whatis.md"></section>
+		    <section data-markdown="slides/what_is_processors.md"></section>
+			<section data-markdown="slides/processors.md"></section>
+			<section data-markdown="slides/pros.md"></section>
+			
+		</section>
+		 <section>              
+			<section data-markdown="slides/extended_feature.md"></section>
+			<section data-markdown="slides/media_query.md"></section>
+			<section data-markdown="slides/variables.md"></section>
+			<section data-markdown="slides/import.md"></section>
+			<section data-markdown="slides/widgets.md"></section>
+		</section>
+                    
+        <section>                           
+		    <section data-markdown="slides/warning.md"></section>                           
+		 </section>
+                    
+   		<section>    
+   		 	<section data-markdown="slides/goodbad.md"></section>           
+		    <section data-markdown="slides/samerules.md"></section>                          
+		    <section data-markdown="slides/elements.md"></section>
+		    <section data-markdown="slides/important.md"></section>
+		    <section data-markdown="slides/selectors.md"></section>
+		     <section data-markdown="slides/inline.md"></section>
+		</section>
+
+		<section>    
+   		 	<section data-markdown="slides/good.md"></section>           
+		    <section data-markdown="slides/readable.md"></section>                          
+		    <section data-markdown="slides/shorthand.md"></section>
+		    <section data-markdown="slides/comments.md"></section>
+		    <section data-markdown="slides/csspre.md"></section>                     
+		</section>
+
+		<section>
+			<section data-markdown="slides/afraid.md"></section>
+			<section data-markdown="slides/thankyou.md"></section>
+		</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
